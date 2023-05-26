@@ -10,7 +10,7 @@ export default function Login() {
         <small>Oi</small>
       </Title>
       <Paragrafo>Teste 123 continue</Paragrafo>
-      <a href="">clik aqui!</a>
+      <button type="button">Enviar</button>
     </Container>
   );
 }
