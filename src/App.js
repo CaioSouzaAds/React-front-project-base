@@ -1,17 +1,19 @@
 import React from 'react';
+import { Router } from 'react-router-dom';
+import history from './services/history';
 
-import Login from './pages/login';
 import GlobalStyles from './styles/GlobalStyles';
 import Header from './components/Header';
+import Routes from './routes';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Login />
-      <GlobalStyles />
-
-      <div></div>
+    <div id="root">
+      <Router history={history}>
+        <Header />
+        <Routes />
+        <GlobalStyles />
+      </Router>
     </div>
   );
 }
